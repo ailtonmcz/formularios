@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <meta charset="utf-8">
+    <head>
+        <title>Cadastro de usuários</title>
+    </head>
+    <body>
+        <h3>Cadastro de usuários</h3><br>
+        <img src="img\users.png">
+        <hr>
+        <form method="get" action="concluir.html"> <!--Formulário declarado com sua ação e metodo-->
+            <label><b>ID do usuário</b></label>
+            <br>
+            <input type="text">
+            <br>
+            <label><b>Senha</b></label>
+            <br>
+            <input type="password">
+            <br>
+            <label><b>Cargo</b></label><br>        
+            <input type="radio" name="opc1"> <b>Diretoria</b><br>
+            <input type="radio" name="opc1"> <b>Gerência</b><br>
+            <input type="radio" name="opc1"> <b>Administrativo</b><br>
+            <input type="radio" name="opc1"> <b>Terceirizado</b><br>
+            <button type="submit">Gravar</button>
+            <style>
+
+            body /* Estilizando corpo da página com CSS*/
+            {
+                background: #7e7f85;
+                font-family:Arial, Helvetica, sans-serif;
+                color: black;
+                font-size:15px
+            }
+            form label /* Estilizando rótulos dos formularios */
+            {
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:13px;
+                color: black;
+                font-weight:bold;
+                float:left;
+            }
+
+            form input /* padronizando todos os campos de formularios */
+            {
+                background-color:#f2f2f2;
+                border:1px solid #000;
+                padding:5px;
+            }
+            
+            form input[type="text"]:hover /* Realçando campos dos formularios de tipo texto ao passar o mouse */
+            {
+                background-color:#797fdb;
+                border:1px solid #333;
+                padding:5px;
+            }
+
+            form input[type="password"]:hover /* Realçando campos dos formularios de tipo password ao passar o mouse */
+            {
+                background-color:#797fdb;
+                border:1px solid #333;
+                padding:5px;
+            }
+
+            form input[type="radio"]:hover /* Realçando campos dos formularios de seleção ao passar o mouse */
+            {
+                background-color:#797fdb;
+                border:1px solid #333;
+                padding:5px;
+            }
+
+            form input[type="text"]:focus /*Estilizando campos dos formularios de tipo texto ao ser selecionado*/
+            {
+                background-color:#6cf;
+                border:1px solid #900;
+                padding:10px;
+            }
+
+            form input[type="password"]:focus /*Estilizando campos dos formularios de tipo passwords ao ser selecionado*/
+            {
+                background-color:#6cf;
+                border:1px solid #900;
+                padding:10px;
+            }
+
+            form input[type="radio"]:focus /*Estilizando campos de seleção de seleção ao ser selecionado*/
+            {
+                background-color:#6cf;
+                border:1px solid #900;
+                padding:10px;
+            }
+
+                        
+            </style>
+
+        </form>
+    </body>
+</html>
